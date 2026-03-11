@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Main</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+height:100vh;
+background-image:url("images/bg2.png");
+background-size:cover;
+background-position:center;
+font-family:'Poppins', sans-serif;
+text-align:center;
+overflow:hidden;
+}
+
+.top-img{
+margin-top:40px;
+}
+
+.top-img img{
+width:110px;
+border-radius:15px;
+border:5px solid #ff2f92;
+}
+
+.title{
+margin-top:15px;
+font-size:24px;
+font-family:'Pacifico', cursive;
+color:#ff2f92;
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.btn{
+padding:12px 28px;
+font-size:17px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+color:white;
+font-weight:bold;
+margin:8px;
+}
+
+.golu{
+background:linear-gradient(45deg,#ff0080,#ff5fa2);
+}
+
+.harry{
+background:linear-gradient(45deg,#ff6aa9,#ff2f92);
+}
+
+.text{
+margin-top:15px;
+font-size:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-img">
+<img src="images/chiu2.png">
+</div>
+
+<div class="title">Cheers To</div>
+<div class="title">The Prettiest Girl</div>
+<div class="title">in the World</div>
+
+<div class="buttons">
+
+<button class="btn golu" onclick="goGallery()">Golu</button>
+
+<button id="harryBtn" class="btn harry">Harry</button>
+
+</div>
+
+<div class="text">
+Choose your Favorite Person
+</div>
+
+<script>
+
+let harry = document.getElementById("harryBtn")
+
+function moveHarry(){
+
+harry.style.position="absolute"
+
+let x = Math.random() * (window.innerWidth - 120)
+let y = Math.random() * (window.innerHeight - 60)
+
+harry.style.left = x + "px"
+harry.style.top = y + "px"
+
+}
+
+harry.addEventListener("click", moveHarry)
+
+function goGallery(){
+window.location.href="gallery.html"
+}
+
+</script>
+
+</body>
+
+</html>
