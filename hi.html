@@ -26,14 +26,26 @@ align-items:center;
 justify-content:center;
 padding:25px;
 text-align:center;
+position:relative;
+}
+
+.section::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
 }
 
 .text{
+position:relative;
 max-width:95%;
 font-size:16px;
 line-height:1.7;
 font-weight:bold;
-text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+text-shadow:2px 2px 8px rgba(0,0,0,0.9);
 }
 
 @media (min-width:600px){
@@ -49,7 +61,7 @@ max-width:700px;
 
 <body>
 
-<div class="section" style="background-image:url('images/IMG_20260315_020037.png');">
+<div class="section" style="background-image:url('./images/IMG_20260315_020037.png');">
 
 <div class="text">
 
@@ -65,7 +77,7 @@ But do u remember I made u mad on the first day itself, where I roasted you for 
 
 </div>
 
-<div class="section" style="background-image:url('images/IMG_20260315_020049.png');">
+<div class="section" style="background-image:url('./images/IMG_20260315_020049.png');">
 
 <div class="text">
 
@@ -78,7 +90,7 @@ That trust, that routine of us every morning n night talking, and those afternoo
 
 </div>
 
-<div class="section" style="background-image:url('images/Untitled design.png');">
+<div class="section" style="background-image:url('./images/IMG_20260315_020921.png');">
 
 <div class="text">
 
